@@ -3,7 +3,7 @@ package se.abdilhakim.Dice;
 import java.util.Random;
 
 public class Player1 {
-    private static String name;
+    private String name;
     private Random random;
     private int totalPoints;
 
@@ -13,11 +13,11 @@ public class Player1 {
         this.totalPoints = 0;
     }
 
-    public static String getName() {
+    public String getName() {
         return name;
     }
 
-    public int getScore() { // Ändrat metodnamn här
+    public int getScore() {
         return totalPoints;
     }
 

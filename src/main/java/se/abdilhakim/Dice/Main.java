@@ -17,23 +17,23 @@ public class Main {
 
             System.out.println("Spelet börjar nu!");
 
-            System.out.println(Player1.getName() + " är redo att kasta tärningen. Tryck Enter för att kasta.");
+            System.out.println(player1.getName() + " är redo att kasta tärningen. Tryck Enter för att kasta.");
             scanner.nextLine();
             player1.rollDiceTwice();
 
 
-            System.out.println(Player2.getName() + " är redo att kasta tärningen. Tryck Enter för att kasta.");
+            System.out.println(player2.getName() + " är redo att kasta tärningen. Tryck Enter för att kasta.");
             scanner.nextLine();
             player2.rollDiceTwice();
 
 
-        System.out.println(Player1.getName() + " fick totalt " + player1.getScore() + " poäng.");
-        System.out.println(Player2.getName() + " fick totalt " + player2.getScore() + " poäng.");
+        System.out.println(player1.getName() + " fick totalt " + player1.getScore() + " poäng.");
+        System.out.println(player2.getName() + " fick totalt " + player2.getScore() + " poäng.");
 
         if (player1.getScore() > player2.getScore()) {
-            System.out.println(Player1.getName() + " vinner!");
+            System.out.println(player1.getName() + " vinner!");
         } else if (player2.getScore() > player1.getScore()) {
-            System.out.println(Player2.getName() + " vinner!");
+            System.out.println(player2.getName() + " vinner!");
         } else {
             System.out.println("Det blev oavgjort!");
         }
@@ -47,6 +47,3 @@ public class Main {
 
     }
 }
-
-
-
